@@ -1,6 +1,6 @@
 import React from "react";
 import jaigurudevImage from "../assets/dealer.jpg";
-import blurcolor from '../assets/blurcolor.jpg'
+import blurcolor from "../assets/blurcolor.jpg";
 import Button from "../components/button/Button";
 
 const DealerForm = () => {
@@ -11,8 +11,8 @@ const DealerForm = () => {
 
   return (
     <div
-      className="bg-green-100 bg-cover bg-center"
-      style={{ backgroundImage: `url(${blurcolor})` }}
+      className="bg-black/40 bg-cover bg-center"
+      // style={{ backgroundImage: `url(${blurcolor})` }}
     >
       {/* Dealer Panel Image */}
       <div className=" backdrop-blur-lg pb-8 backdrop-brightness-75">
@@ -86,7 +86,7 @@ const DealerForm = () => {
           <h2 className="text-lg text-center text-gray-100 mb-6">
             Fill out the form below to get started on your journey with Us.
           </h2>
-          <form onSubmit={handleSubmit}>
+          {/* <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <label
                 htmlFor="fullName"
@@ -150,7 +150,15 @@ const DealerForm = () => {
               ></textarea>
             </div>
             <Button text={"Submit"} type={"submit"} />
-          </form>
+          </form> */}
+          <div className=" flex justify-center items-center h-full">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLScU8vOne4auKsHD0RGZ4Tdd9fMEA1jSVWbQPPvSDYbg23VhiA/viewform?usp=sf_link"
+              className="bg-orange-200 p-2 rounded-xl"
+            >
+              Google Form Link
+            </a>
+          </div>
         </div>
       </div>
     </div>

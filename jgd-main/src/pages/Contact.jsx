@@ -12,7 +12,9 @@ const ContactUs = () => {
       </div>
       <hr className=" h-3 bg-orange-400"/>
 
-      <div className="bg-cover bg-center" style={{ backgroundImage: `url(${img})` }}>
+      <div className="bg-cover bg-center" 
+      style={{ backgroundImage: `url(${img})` }}
+      >
       <div
         className="flex flex-col lg:flex-row max-w-7xl  mx-auto"
         

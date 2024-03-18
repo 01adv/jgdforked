@@ -1,5 +1,6 @@
 import React from "react";
-import dealer2 from '../../assets/dealer3.jpg'
+import dealer2 from "../../assets/dealer3.jpg";
+import { Link } from "react-router-dom";
 
 const BeDealer = () => {
   return (
@@ -21,15 +22,17 @@ const BeDealer = () => {
                 </p>
 
                 <div>
-                  <a
-                    href=""
-                    class="bg-primary-500 hover:bg-primary-600 hover:shadow-lg hover:border-2 text-white font-bold px-4 py-2 mt-3 rounded-lg"
-                  >
-                    Become a Dealer
-                  </a>
+                  <Link to={"/dealer"}>
+                    <a
+                      href=""
+                      class="bg-primary-500 hover:bg-primary-600 hover:shadow-lg hover:border-2 text-white font-bold px-4 py-2 mt-3 rounded-lg"
+                    >
+                      Become a Dealer
+                    </a>
+                  </Link>
                 </div>
               </aside>
-              
+
               <aside class="relative hidden md:block">
                 <img
                   class="absolute inset-0 object-cover object-left-top w-full h-full rounded-tl-lg"

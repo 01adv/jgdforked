@@ -1,34 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import { CgMail } from "react-icons/cg";
 import { FaPhoneAlt, FaRegAddressCard, FaWhatsapp } from "react-icons/fa";
 import logo from "../../assets/logo.svg";
 import { FooterProducts, FooterUsefulLinks } from "./FooterLinks";
 import SocialIconsContainer from "./SocialIcon";
-import { useInView } from "react-intersection-observer";
-
 
 // still needed some work for animation effects
 
 const AnimatedFooter = () => {
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-  });
-
-  const [animated, setAnimated] = useState(false);
-
-  const handleAnimation = () => {
-    if (inView && !animated) {
-      setAnimated(true);
-    }
-  };
   return (
     <footer
       id="footer"
-      className={`${
-        animated ? "animate__animated animate__fadeInUp" : ""
-      } bg-neutral-800 text-center text-gray-100 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left`}
-      ref={ref}
-      onLoad={handleAnimation}
+      className={`bg-neutral-800 text-center text-gray-100 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left min-h-[100vh]`}
     >
       <div className="flex items-center justify-center border-b-2 border-gray-400 p-6 dark:border-neutral-500 lg:justify-between">
         <div className="mr-12 hidden lg:block">

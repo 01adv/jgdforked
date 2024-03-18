@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Productinfo = () => {
+const ProductInfo = () => {
   const [activeTab, setActiveTab] = useState("description");
 
   const handleTabClick = (tab) => {
@@ -89,4 +89,4 @@ const Productinfo = () => {
   );
 };
 
-export default Productinfo;
+export default ProductInfo;
